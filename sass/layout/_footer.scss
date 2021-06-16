@@ -1,0 +1,14 @@
+footer{
+    background-color: $gris-foncer;
+    color: $blanc;
+    display: grid;
+    grid-template-rows: 45px 27px 25px 24px 24px 16px;
+    align-items: center;
+    grid-template-columns: 19px 100%;
+
+
+    h4, i, p{
+        grid-column: 2;
+    }
+
+}

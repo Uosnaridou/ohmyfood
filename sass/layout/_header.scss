@@ -1,3 +1,9 @@
 .logo_header{
-    width: map-get($taille_header_logo, largeur);
+    width: map-get($taille_logo, largeur);
+    display: flex;
+    margin: auto;
+}
+
+.menu_img{
+    width: 100%;
 }
