@@ -1,9 +1,97 @@
+#img_header{
+    z-index: -1;
+}
+
 main{
 
     background-color: $gris-primaire;
     border-radius: 35px;
-    z-index: 1;
+    z-index: 1010;
+    /*margin-top: -102px;*/
 
+    h1{
+        display: flex;
+        justify-content: space-around;
 
-    
+        .heart{
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    section{
+        height: 304px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2{
+            font-family: "Roboto", sans serif;
+            margin-bottom: 7px;
+        }
+
+        .trait_vert{
+            background-color : $vert;
+            width: 65px;
+            height: 5px;
+        }
+
+        .menu{
+  
+            display: flex; 
+            justify-content: space-between;
+            background-color: $blanc;
+            border-radius: 12px;
+            width: map-get($taille_articles, longeur_width);
+            height: map-get($taille_articles, hauteur_heigth);
+            box-shadow: $gris_ombre -1px 5px 9px;  
+
+            &_texte{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-overflow: ellipsis;
+
+                p{
+                    margin: 0;
+                }
+
+                .gras{
+                    font-weight: bold;
+                }
+            }
+
+            &_prix{
+                display: flex;
+                align-items: center;
+            }
+
+            &_hover{
+                display: flex;
+                align-items: center;
+                background-color: $vert;
+                display: none;
+                justify-content: center;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                width: 50px;
+
+                i{
+                    color: $vert;
+                    background-color: $blanc;
+                    border-radius: 20px;
+                    font-size: 20px;
+                }
+
+            } 
+
+        }
+
+        .menu:hover .menu_hover{
+
+            display: flex;
+        }
+    }
 }
+
