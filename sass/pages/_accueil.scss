@@ -6,6 +6,14 @@
     &_lieu {
         background-color: $gris_lieu;
         box-shadow: 0px -4px 3px $gris_ombre ;
+
+        i{
+            p{
+                color: black;
+                font-family: "Roboto", sans serif;
+                font-weight: 100;
+            }
+        }
     }
 
     .titre_accueil{
@@ -45,9 +53,6 @@
         color: #8e8888;
     }
 
-    @media (max-width: map-get($breakpoints, mobile)) {
-        
-    }
 
 };
 
@@ -125,6 +130,14 @@
          margin-bottom: 16px;
          border-radius: 16px;
          height: 202px;
+
+         .coeur{
+            width: 20px;
+            position: absolute;
+            bottom: 22px;
+            right: 19px;
+            font-size: 22px;
+        }
      }
      
      &_img{
@@ -178,3 +191,11 @@
      }
 
 }
+
+.coeur:hover {
+    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(238deg) brightness(119%) contrast(119%);
+}
+
+
+
+

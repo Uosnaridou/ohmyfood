@@ -2,10 +2,13 @@
 @import "./utils/functions";
 
 @import "./base/base";
+
 @import "./composant/buttons";
+
 @import "./layout/header";
 @import "./layout/footer";
 
-
 @import "./pages/accueil";
 @import "./pages/menu.scss";
+@import "./pages/responsiveAccueil";
+@import "./pages/responsiveMenu";

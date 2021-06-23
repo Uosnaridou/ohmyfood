@@ -6,20 +6,22 @@
   font-family: "Shrikhand-Regular";
   src: url("Shrikhand-Regular.otf") format("opentype");
 }
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans serif;
 }
 
-/*
-h1, h2, h3, h4, h5, h6{
-
-    font-family : "Shrikhand-Regular", sans serif;
-    font-weight: 100;
+h1 {
+  font-family: "Shrikhand-Regular", sans serif;
+  font-weight: 100;
 }
 
-*/
 h4 {
   font-family: "Shrikhand-Regular", sans serif;
   font-weight: 100;
@@ -37,26 +39,46 @@ h4 {
   color: #FFFFFF;
 }
 
+.header_accueil {
+  height: 52px;
+  display: flex;
+}
+
+.en-tete {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 20px 31px 211px;
+  align-items: center;
+}
+.en-tete a {
+  color: black;
+  grid-column: 2;
+}
+
 .logo_header {
-  width: 50%;
   display: flex;
   margin: auto;
+  width: 119px;
 }
 
 .menu_img {
   width: 100%;
 }
 
-.header_accueil {
-  height: 52px;
+.img_laNoteEnchantee {
+  height: 210px;
+}
+
+.header_menu {
   display: flex;
+  flex-direction: column;
 }
 
 footer {
   background-color: #353535;
   color: #FFFFFF;
   display: grid;
-  grid-template-rows: 67px 19px 35px 22px 30px 40px;
+  grid-template-rows: 64px 19px 35px 22px 30px 30px;
   align-items: center;
   grid-template-columns: 28px 100%;
   font-size: 16px;
@@ -80,6 +102,11 @@ footer .footer_logo {
 .header_lieu {
   background-color: #EAEAEA;
   box-shadow: 0px -4px 3px #D5D5D5;
+}
+.header_lieu i p {
+  color: black;
+  font-family: "Roboto", sans serif;
+  font-weight: 100;
 }
 .header .titre_accueil {
   font-family: "Roboto", sans serif;
@@ -111,6 +138,7 @@ footer .footer_logo {
 .header p {
   color: #8e8888;
 }
+
 .fonctionnement {
   margin-top: 45px;
   margin-bottom: 45px;
@@ -175,6 +203,13 @@ footer .footer_logo {
   border-radius: 16px;
   height: 202px;
 }
+.restaurants_cadre .coeur {
+  width: 20px;
+  position: absolute;
+  bottom: 22px;
+  right: 19px;
+  font-size: 22px;
+}
 .restaurants_img {
   width: 270px;
   height: 141px;
@@ -219,6 +254,10 @@ footer .footer_logo {
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
+.coeur:hover {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(238deg) brightness(119%) contrast(119%);
+}
+
 #img_header {
   z-index: -1;
 }
@@ -226,34 +265,46 @@ footer .footer_logo {
 main {
   background-color: #F6F6F6;
   border-radius: 35px;
-  z-index: 1010;
-  /*margin-top: -102px;*/
+  margin-top: -38px;
+  height: 1060px;
+  padding-top: 10px;
 }
 main h1 {
   display: flex;
   justify-content: space-around;
+  font-size: 24px;
 }
 main h1 .heart {
-  font-size: 25px;
+  font-size: 22px;
   display: flex;
   align-items: center;
 }
 main section {
-  height: 304px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 283px;
+}
+main section .titre_plat {
+  height: 47px;
 }
 main section h2 {
-  font-family: "Roboto", sans serif;
-  margin-bottom: 7px;
+  font-weight: 100;
+  margin-bottom: 2px;
+  margin-left: 17px;
+  font-size: 19px;
+  color: #353535;
 }
 main section .trait_vert {
   background-color: #99E2D0;
   width: 65px;
   height: 5px;
+  margin-left: 17px;
 }
-main section .menu {
+main section .choix_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main section .choix_menu .menu {
   display: flex;
   justify-content: space-between;
   background-color: #FFFFFF;
@@ -261,24 +312,35 @@ main section .menu {
   width: 300px;
   height: 58px;
   box-shadow: #D5D5D5 -1px 5px 9px;
+  margin-bottom: 21px;
 }
-main section .menu_texte {
+main section .choix_menu .menu_texte {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-overflow: ellipsis;
+  margin-left: 11px;
+  width: 225px;
 }
-main section .menu_texte p {
+main section .choix_menu .menu_texte p {
   margin: 0;
 }
-main section .menu_texte .gras {
+main section .choix_menu .menu_texte .gras {
   font-weight: bold;
+  width: 250px;
 }
-main section .menu_prix {
+main section .choix_menu .menu_texte .detail {
+  color: #353535;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+main section .choix_menu .menu_prix {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  margin-bottom: 14px;
+  margin-right: 19px;
 }
-main section .menu_hover {
+main section .choix_menu .menu_hover {
   display: flex;
   align-items: center;
   background-color: #99E2D0;
@@ -288,7 +350,7 @@ main section .menu_hover {
   border-bottom-right-radius: 10px;
   width: 50px;
 }
-main section .menu_hover i {
+main section .choix_menu .menu_hover i {
   color: #99E2D0;
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -296,6 +358,121 @@ main section .menu_hover i {
 }
 main section .menu:hover .menu_hover {
   display: flex;
+}
+main section .menu:hover .gras {
+  width: 196px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+main .boutton_commander {
+  margin-top: 36px;
+  box-shadow: #353535 0px 1px 13px -4px;
+}
+main .quatre_entree {
+  height: 355px;
+}
+
+.noteEnchantee {
+  height: 1133px;
+}
+
+@media screen and (min-width: 1024px) {
+  .header .texte_reservation {
+    height: 143px;
+  }
+
+  body {
+    width: 85%;
+    margin: auto;
+    font-size: 10px;
+  }
+
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .fonctionnement_responsive {
+    display: flex;
+    margin-top: 28px;
+  }
+
+  .restaurants {
+    height: 590px;
+  }
+  .restaurants_responsive {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+  }
+  .restaurants h2 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header_accueil {
+    height: 113px;
+  }
+  .header_accueil .logo_header {
+    width: 246px;
+  }
+
+  .fonctionnement_etapes {
+    width: 390px;
+    height: 68px;
+  }
+
+  .restaurants {
+    height: 471px;
+  }
+  .restaurants h2 {
+    padding-bottom: 40px;
+  }
+  .restaurants_cadre {
+    width: 416px;
+    height: 242px;
+  }
+  .restaurants_img {
+    width: 416px;
+    height: 191px;
+  }
+  .restaurants_responsive {
+    grid-template-columns: 23% 23% 23% 23%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .en-tete {
+    display: flex;
+    width: 25%;
+    margin: auto;
+  }
+
+  .menu_img {
+    height: 470px;
+  }
+
+  main {
+    margin-top: -110px;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .en-tete {
+    height: 127px;
+  }
+  .en-tete a {
+    font-size: 47px;
+  }
+
+  .logo_header {
+    width: 284px;
+  }
+
+  .menu_img {
+    height: 695px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

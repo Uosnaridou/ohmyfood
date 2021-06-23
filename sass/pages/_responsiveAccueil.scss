@@ -1,0 +1,83 @@
+@media screen and (min-width: map-get($breakpoints, desktop)){
+    .header .texte_reservation {
+        height: 143px;
+    }
+    
+    
+    body{
+        width: 85%;
+        margin: auto;
+        font-size: 10px;
+    }
+
+    .fonctionnement {
+
+        h2 {
+            text-align: center;
+        }
+
+        &_responsive{
+            display: flex;
+            margin-top: 28px;
+        }
+    }
+
+    .restaurants{
+        height: 590px;
+
+        &_responsive{
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: map-get($breakpoints, grandEcran)){
+
+    body{
+        font-size: 16px;
+    }
+
+    .header_accueil{
+        height: 113px;
+
+        .logo_header{
+            width: 246px;
+        }
+    }
+
+    .fonctionnement_etapes{
+        width: 390px;
+        height: 68px;
+    }
+
+    .restaurants {
+        height: 471px;
+
+        h2{
+            padding-bottom: 40px;
+        }
+   
+        &_cadre{
+            width: 416px;
+            height: 242px;
+        }
+        &_img{
+            width: 416px;
+            height: 191px;
+        }
+
+        &_responsive{
+            grid-template-columns: 23% 23% 23% 23%;
+        }
+
+    }
+
+}
