@@ -95,6 +95,197 @@ footer .footer_logo {
   align-items: center;
 }
 
+.loadingio-spinner-bean-eater-rvzlrj48sc {
+  width: 214px;
+  height: 214px;
+  position: absolute;
+  top: 210px;
+  left: 442px;
+}
+
+@keyframes ldio-3jbzqrfg4n9-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ldio-3jbzqrfg4n9-2 {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(225deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.ldio-3jbzqrfg4n9 > div:nth-child(2) {
+  transform: translate(-15px, 0);
+}
+
+.ldio-3jbzqrfg4n9 > div:nth-child(2) div {
+  position: absolute;
+  top: 42.8px;
+  left: 42.8px;
+  width: 128.4px;
+  height: 64.2px;
+  border-radius: 128.4px 128.4px 0 0;
+  background: #9356DC;
+  animation: ldio-3jbzqrfg4n9-1 1s linear infinite;
+  transform-origin: 64.2px 64.2px;
+}
+
+.ldio-3jbzqrfg4n9 > div:nth-child(2) div:nth-child(2) {
+  animation: ldio-3jbzqrfg4n9-2 1s linear infinite;
+}
+
+.ldio-3jbzqrfg4n9 > div:nth-child(2) div:nth-child(3) {
+  transform: rotate(-90deg);
+  animation: none;
+}
+
+@keyframes ldio-3jbzqrfg4n9-3 {
+  0% {
+    transform: translate(203.3px, 0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(74.9px, 0);
+    opacity: 1;
+  }
+}
+.ldio-3jbzqrfg4n9 > div:nth-child(1) {
+  display: block;
+}
+
+.ldio-3jbzqrfg4n9 > div:nth-child(1) div {
+  position: absolute;
+  top: 98.44px;
+  left: -8.56px;
+  width: 17.12px;
+  height: 17.12px;
+  border-radius: 50%;
+  background: #99e2d0;
+  animation: ldio-3jbzqrfg4n9-3 1s linear infinite;
+}
+
+.ldio-3jbzqrfg4n9 > div:nth-child(1) div:nth-child(1) {
+  animation-delay: -0.67s;
+}
+
+.ldio-3jbzqrfg4n9 > div:nth-child(1) div:nth-child(2) {
+  animation-delay: -0.33s;
+}
+
+.ldio-3jbzqrfg4n9 > div:nth-child(1) div:nth-child(3) {
+  animation-delay: 0s;
+}
+
+.loadingio-spinner-bean-eater-rvzlrj48sc {
+  width: 214px;
+  height: 214px;
+  display: inline-block;
+  overflow: hidden;
+  background: none;
+}
+
+.ldio-3jbzqrfg4n9 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+  /* see note above */
+}
+
+.fade-1 {
+  animation: fadeIn 0.4s !important;
+}
+
+.fade-2 {
+  animation: fadeIn 0.8s !important;
+}
+
+.fade-3 {
+  animation: fadeIn 1.2s !important;
+}
+
+.fade-4 {
+  animation: fadeIn 1.6s !important;
+}
+
+.fade-5 {
+  animation: fadeIn 2s !important;
+}
+
+.fade-6 {
+  animation: fadeIn 2.4s !important;
+}
+
+.fade-7 {
+  animation: fadeIn 2.8s !important;
+}
+
+.fade-8 {
+  animation: fadeIn 3.2s !important;
+}
+
+.fade-9 {
+  animation: fadeIn 3.6s !important;
+}
+
+.fade-10 {
+  animation: fadeIn 4s !important;
+}
+
+.fade-11 {
+  animation: fadeIn 4.4s !important;
+}
+
+.fade-12 {
+  animation: fadeIn 4.8s !important;
+}
+
+.fade-13 {
+  animation: fadeIn 5.2s !important;
+}
+
+.fade-14 {
+  animation: fadeIn 5.6s !important;
+}
+
+.fade-15 {
+  animation: fadeIn 6s !important;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.fond {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(102, 101, 101, 0.85);
+  z-index: 1;
+}
+
 .header {
   background-color: #F6F6F6;
   width: 100%;
@@ -134,6 +325,9 @@ footer .footer_logo {
   text-decoration: none;
   color: white;
   box-shadow: #D5D5D5 0px 4px 7px 2px;
+}
+.header a:hover {
+  filter: opacity(0.8);
 }
 .header p {
   color: #8e8888;
@@ -313,6 +507,7 @@ main section .choix_menu .menu {
   height: 58px;
   box-shadow: #D5D5D5 -1px 5px 9px;
   margin-bottom: 21px;
+  animation: fadeIn 0.4s linear;
 }
 main section .choix_menu .menu_texte {
   display: flex;
@@ -368,6 +563,10 @@ main section .menu:hover .gras {
 main .boutton_commander {
   margin-top: 36px;
   box-shadow: #353535 0px 1px 13px -4px;
+}
+main .boutton_commander:hover {
+  filter: opacity(0.8);
+  cursor: pointer;
 }
 main .quatre_entree {
   height: 355px;

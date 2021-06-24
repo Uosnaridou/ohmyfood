@@ -60,6 +60,8 @@ main{
                 height: map-get($taille_articles, hauteur_heigth);
                 box-shadow: $gris_ombre -1px 5px 9px;  
                 margin-bottom: 21px;
+                animation: fadeIn 0.4s linear;
+
 
                 &_texte{
                     display: flex;
@@ -133,6 +135,11 @@ main{
         box-shadow: $gris-foncer 0px 1px 13px -4px;
     }
 
+    .boutton_commander:hover{
+        filter: opacity(0.8);
+        cursor: pointer;
+    }
+
     .quatre_entree{
         height: 355px;
     }
@@ -142,4 +149,6 @@ main{
 .noteEnchantee{
     height: 1133px;
 }
+
+
 

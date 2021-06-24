@@ -1,3 +1,14 @@
+.fond{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(102 101 101 / 85%);
+    z-index: 1;
+}
+
+
 .header
 {
     background-color: $gris-primaire;
@@ -49,12 +60,18 @@
         box-shadow: $gris_ombre 0px 4px 7px 2px;
     }
 
+    a:hover{
+        filter: opacity(0.8);
+    }
+
     p{
         color: #8e8888;
     }
 
 
 };
+
+
 
 
 
@@ -195,7 +212,5 @@
 .coeur:hover {
     filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(238deg) brightness(119%) contrast(119%);
 }
-
-
 
 
