@@ -95,14 +95,6 @@ footer .footer_logo {
   align-items: center;
 }
 
-.loadingio-spinner-bean-eater-rvzlrj48sc {
-  width: 214px;
-  height: 214px;
-  position: absolute;
-  top: 210px;
-  left: 442px;
-}
-
 @keyframes ldio-3jbzqrfg4n9-1 {
   0% {
     transform: rotate(0deg);
@@ -125,10 +117,6 @@ footer .footer_logo {
     transform: rotate(180deg);
   }
 }
-.ldio-3jbzqrfg4n9 > div:nth-child(2) {
-  transform: translate(-15px, 0);
-}
-
 .ldio-3jbzqrfg4n9 > div:nth-child(2) div {
   position: absolute;
   top: 42.8px;
@@ -163,10 +151,6 @@ footer .footer_logo {
     opacity: 1;
   }
 }
-.ldio-3jbzqrfg4n9 > div:nth-child(1) {
-  display: block;
-}
-
 .ldio-3jbzqrfg4n9 > div:nth-child(1) div {
   position: absolute;
   top: 98.44px;
@@ -193,21 +177,31 @@ footer .footer_logo {
 .loadingio-spinner-bean-eater-rvzlrj48sc {
   width: 214px;
   height: 214px;
-  display: inline-block;
-  overflow: hidden;
-  background: none;
+  position: absolute;
+  top: 210px;
+  left: 442px;
 }
 
-.ldio-3jbzqrfg4n9 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform: translateZ(0) scale(1);
-  backface-visibility: hidden;
-  transform-origin: 0 0;
-  /* see note above */
+.fond {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(102, 101, 101, 0.85);
+  z-index: 1;
+  animation: spinloader 2s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
 
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+    background-color: white;
+  }
+}
 .fade-1 {
   animation: fadeIn 0.4s !important;
 }
@@ -276,16 +270,24 @@ footer .footer_logo {
     transform: scale(1);
   }
 }
-.fond {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(102, 101, 101, 0.85);
-  z-index: 1;
+@keyframes rotation_validation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
+@keyframes scale-up-hor-right {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
+}
 .header {
   background-color: #F6F6F6;
   width: 100%;
@@ -544,12 +546,14 @@ main section .choix_menu .menu_hover {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 50px;
+  animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 main section .choix_menu .menu_hover i {
   color: #99E2D0;
   background-color: #FFFFFF;
   border-radius: 20px;
   font-size: 20px;
+  animation: rotation_validation 0.6s ease-in-out both;
 }
 main section .menu:hover .menu_hover {
   display: flex;
@@ -640,6 +644,13 @@ main .quatre_entree {
   }
   .restaurants_responsive {
     grid-template-columns: 23% 23% 23% 23%;
+  }
+}
+@media (max-width: 320px) {
+  .loadingio-spinner-bean-eater-rvzlrj48sc {
+    position: absolute;
+    top: 285px;
+    left: 48px;
   }
 }
 @media screen and (min-width: 1024px) {

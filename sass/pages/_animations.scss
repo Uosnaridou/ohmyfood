@@ -1,27 +1,16 @@
 //spinner loading
-
-.loadingio-spinner-bean-eater-rvzlrj48sc{
-    width: 214px;
-    height: 214px;
-    position: absolute;
-    top: 210px;
-    left: 442px;
-}
-
-
 @keyframes ldio-3jbzqrfg4n9-1 {
   0% { transform: rotate(0deg) }
  50% { transform: rotate(-45deg) }
 100% { transform: rotate(0deg) }
 }
+
 @keyframes ldio-3jbzqrfg4n9-2 {
   0% { transform: rotate(180deg) }
  50% { transform: rotate(225deg) }
 100% { transform: rotate(180deg) }
 }
-.ldio-3jbzqrfg4n9 > div:nth-child(2) {
-transform: translate(-15px,0);
-}
+
 .ldio-3jbzqrfg4n9 > div:nth-child(2) div {
 position: absolute;
 top: 42.800000000000004px;
@@ -33,20 +22,22 @@ background: $violet;
 animation: ldio-3jbzqrfg4n9-1 1s linear infinite;
 transform-origin: 64.2px 64.2px
 }
+
 .ldio-3jbzqrfg4n9 > div:nth-child(2) div:nth-child(2) {
 animation: ldio-3jbzqrfg4n9-2 1s linear infinite
 }
+
 .ldio-3jbzqrfg4n9 > div:nth-child(2) div:nth-child(3) {
 transform: rotate(-90deg);
 animation: none;
-}@keyframes ldio-3jbzqrfg4n9-3 {
+}
+
+@keyframes ldio-3jbzqrfg4n9-3 {
   0% { transform: translate(203.3px,0); opacity: 0 }
  20% { opacity: 1 }
 100% { transform: translate(74.9px,0); opacity: 1 }
 }
-.ldio-3jbzqrfg4n9 > div:nth-child(1) {
-display: block;
-}
+
 .ldio-3jbzqrfg4n9 > div:nth-child(1) div {
 position: absolute;
 top: 98.44000000000001px;
@@ -60,21 +51,41 @@ animation: ldio-3jbzqrfg4n9-3 1s linear infinite
 .ldio-3jbzqrfg4n9 > div:nth-child(1) div:nth-child(1) { animation-delay: -0.67s }
 .ldio-3jbzqrfg4n9 > div:nth-child(1) div:nth-child(2) { animation-delay: -0.33s }
 .ldio-3jbzqrfg4n9 > div:nth-child(1) div:nth-child(3) { animation-delay: 0s }
-.loadingio-spinner-bean-eater-rvzlrj48sc {
-width: 214px;
-height: 214px;
-display: inline-block;
-overflow: hidden;
-background: none;
+
+
+//PLacement du loader
+.loadingio-spinner-bean-eater-rvzlrj48sc{
+  width: 214px;
+  height: 214px;
+  position: absolute;
+  top: 210px;
+  left: 442px;
 }
-.ldio-3jbzqrfg4n9 {
-width: 100%;
-height: 100%;
-position: relative;
-transform: translateZ(0) scale(1);
-backface-visibility: hidden;
-transform-origin: 0 0; /* see note above */
+
+//couleur du fond
+.fond{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(102 101 101 / 85%);
+  z-index: 1;
+  animation: spinloader 2s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
 }
+
+
+//enlever le fond 
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+    background-color: white
+  }
+}
+
 
 
 //Apparaition des menus
@@ -95,4 +106,27 @@ transform-origin: 0 0; /* see note above */
 }
 
 
+//Animation validation du menu 
+@keyframes rotation_validation{
+    0% {
+      transform: rotate(0);
+    }
+      
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+//slide vers la gauche
+@keyframes scale-up-hor-right {
+  0% {
+            transform: scaleX(0.4);
+            transform-origin: 100% 100%;
+  }
+  100% {
+            transform: scaleX(1);
+            transform-origin: 100% 100%;
+  }
+}
 
