@@ -399,25 +399,6 @@ footer .footer_logo {
   border-radius: 16px;
   height: 202px;
 }
-.restaurants_cadre .coeur {
-  width: 20px;
-  position: absolute;
-  bottom: 21px;
-  right: 18px;
-}
-.restaurants_cadre .coeur_noir {
-  width: 20px;
-}
-.restaurants_cadre .coeur_degrader {
-  fill: url(#MyGradient);
-  display: none;
-}
-.restaurants_cadre .coeur:hover .coeur_degrader {
-  display: initial;
-}
-.restaurants_cadre .coeur:hover .coeur_noir {
-  display: none;
-}
 .restaurants_img {
   width: 270px;
   height: 141px;
@@ -460,6 +441,40 @@ footer .footer_logo {
 }
 .restaurants i:hover {
   background: linear-gradient(#FF79DA, #9356DC);
+}
+
+.coeur {
+  width: 20px;
+  position: absolute;
+  bottom: 21px;
+  right: 18px;
+}
+.coeur_noir {
+  width: 20px;
+}
+.coeur_degrader_1 {
+  fill: url(#MyGradient_1);
+  display: none;
+}
+.coeur_degrader_2 {
+  fill: url(#MyGradient_2);
+  display: none;
+}
+.coeur_degrader_3 {
+  fill: url(#MyGradient_3);
+  display: none;
+}
+.coeur_degrader_4 {
+  fill: url(#MyGradient_4);
+  display: none;
+}
+
+.coeur:hover .coeur_degrader_1, .coeur:hover .coeur_degrader_2, .coeur:hover .coeur_degrader_3, .coeur:hover .coeur_degrader_4 {
+  display: initial !important;
+}
+
+.coeur:hover .coeur_noir {
+  display: none;
 }
 
 #img_header {
