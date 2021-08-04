@@ -329,4 +329,8 @@ section .menu:hover .menu_hover {
   display: -ms-flexbox;
   display: flex;
 }
+
+* {
+  transition: .25s;
+}
 /*# sourceMappingURL=main.css.map */

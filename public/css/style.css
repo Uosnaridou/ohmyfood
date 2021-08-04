@@ -178,8 +178,8 @@ footer .footer_logo {
   width: 214px;
   height: 214px;
   position: absolute;
-  top: 210px;
-  left: 442px;
+  top: calc(50% - 10vmin);
+  left: calc(50% - 10vmin);
 }
 
 .fond {
