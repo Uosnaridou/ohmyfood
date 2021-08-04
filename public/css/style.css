@@ -665,13 +665,6 @@ main .quatre_entree {
     grid-template-columns: 23% 23% 23% 23%;
   }
 }
-@media (max-width: 320px) {
-  .loadingio-spinner-bean-eater-rvzlrj48sc {
-    position: absolute;
-    top: 285px;
-    left: 48px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .en-tete {
     display: flex;
