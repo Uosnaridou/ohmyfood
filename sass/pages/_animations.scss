@@ -58,8 +58,7 @@ animation: ldio-3jbzqrfg4n9-3 1s linear infinite
   width: 214px;
   height: 214px;
   position: absolute;
-  top: calc(50% - 10vmin);
-  left: calc(50% - 10vmin);
+  transform: translate(-50%,-50%);
 }
 
 //couleur du fond

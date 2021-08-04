@@ -178,8 +178,7 @@ footer .footer_logo {
   width: 214px;
   height: 214px;
   position: absolute;
-  top: calc(50% - 10vmin);
-  left: calc(50% - 10vmin);
+  transform: translate(-50%, -50%);
 }
 
 .fond {
@@ -442,38 +441,35 @@ footer .footer_logo {
 .restaurants i:hover {
   background: linear-gradient(#FF79DA, #9356DC);
 }
-
-.coeur {
+.restaurants .coeur {
   width: 20px;
   position: absolute;
   bottom: 21px;
   right: 18px;
 }
-.coeur_noir {
+.restaurants .coeur_noir {
   width: 20px;
 }
-.coeur_degrader_1 {
+.restaurants .coeur_degrader_1 {
   fill: url(#MyGradient_1);
   display: none;
 }
-.coeur_degrader_2 {
+.restaurants .coeur_degrader_2 {
   fill: url(#MyGradient_2);
   display: none;
 }
-.coeur_degrader_3 {
+.restaurants .coeur_degrader_3 {
   fill: url(#MyGradient_3);
   display: none;
 }
-.coeur_degrader_4 {
+.restaurants .coeur_degrader_4 {
   fill: url(#MyGradient_4);
   display: none;
 }
-
-.coeur:hover .coeur_degrader_1, .coeur:hover .coeur_degrader_2, .coeur:hover .coeur_degrader_3, .coeur:hover .coeur_degrader_4 {
+.restaurants .coeur:hover .coeur_degrader_1, .restaurants .coeur:hover .coeur_degrader_2, .restaurants .coeur:hover .coeur_degrader_3, .restaurants .coeur:hover .coeur_degrader_4 {
   display: initial !important;
 }
-
-.coeur:hover .coeur_noir {
+.restaurants .coeur:hover .coeur_noir {
   display: none;
 }
 

@@ -190,47 +190,44 @@
         background: linear-gradient($rose, $violet);
      }
 
-}
 
-
-
-.coeur{
-    width: 20px;
-    position: absolute;
-    bottom: 21px;
-    right: 18px;
-
-    &_noir{
+     .coeur{
         width: 20px;
-    }
-
-    &_degrader_1 {
-        fill: url(#MyGradient_1);
-        display: none;
-    }
-    &_degrader_2 {
-        fill: url(#MyGradient_2);
-        display: none;
-    }
-    &_degrader_3 {
-        fill: url(#MyGradient_3);
-        display: none;
-    }
-    &_degrader_4 {
-        fill: url(#MyGradient_4);
-        display: none;
+        position: absolute;
+        bottom: 21px;
+        right: 18px;
+    
+        &_noir{
+            width: 20px;
+        }
+    
+        &_degrader_1 {
+            fill: url(#MyGradient_1);
+            display: none;
+        }
+        &_degrader_2 {
+            fill: url(#MyGradient_2);
+            display: none;
+        }
+        &_degrader_3 {
+            fill: url(#MyGradient_3);
+            display: none;
+        }
+        &_degrader_4 {
+            fill: url(#MyGradient_4);
+            display: none;
+        }
+        
     }
     
+    .coeur:hover .coeur_degrader_1, .coeur:hover .coeur_degrader_2, .coeur:hover .coeur_degrader_3, .coeur:hover .coeur_degrader_4{
+         display: initial !important;
+    }
+    
+    .coeur:hover .coeur_noir{
+        display: none;
+    }
 }
 
-
-.coeur:hover .coeur_degrader_1, .coeur:hover .coeur_degrader_2, .coeur:hover .coeur_degrader_3, .coeur:hover .coeur_degrader_4{
-     display: initial !important;
-}
-
-
-.coeur:hover .coeur_noir{
-    display: none;
-}
 
 
